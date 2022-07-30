@@ -51,6 +51,10 @@
   }
 
   .btn-blue {
-    @apply bg-primary text-white w-full sm:w-72;
+    @apply bg-primary text-white w-full sm:w-80;
+  }
+
+  .footerLink{
+    @apply hover:underline
   }
 }
