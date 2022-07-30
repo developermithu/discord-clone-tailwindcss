@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Open+Sans&family=Roboto:wght@700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -7,13 +7,24 @@
 /* Base Style */
 @layer base {
   h1,
-  h2,
-  h3 {
+  h2 {
     @apply font-bold font-blackhans;
+  }
+
+  h3 {
+    @apply font-roboto font-bold;
   }
 
   body {
     @apply font-opensans;
+  }
+
+  h3 {
+    @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl pb-5 tracking-wide font-normal leading-loose;
+  }
+
+  p {
+    @apply text-sm md:text-base lg:text-lg xl:text-xl;
   }
 }
 
@@ -37,5 +48,9 @@
 
   .btn-black {
     @apply bg-black text-white;
+  }
+
+  .btn-blue {
+    @apply bg-primary text-white w-full sm:w-72;
   }
 }

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Open+Sans&family=Roboto:wght@700&display=swap");
 
 /*
 ! tailwindcss v3.1.7 | MIT License | https://tailwindcss.com
@@ -413,14 +413,81 @@ video {
 }
 
 h1, 
-  h2, 
-  h3{
+  h2{
   font-family: Black Han Sans, sans-serif;
+  font-weight: 700;
+}
+
+h3{
+  font-family: Roboto, sans-serif;
   font-weight: 700;
 }
 
 body{
   font-family: Open Sans, sans-serif;
+}
+
+h3{
+  padding-bottom: 1.25rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.025em;
+}
+
+@media (min-width: 640px){
+  h3{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media (min-width: 768px){
+  h3{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 1024px){
+  h3{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 1280px){
+  h3{
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+p{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+@media (min-width: 768px){
+  p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px){
+  p{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1280px){
+  p{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 *, ::before, ::after{
@@ -703,6 +770,20 @@ body{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.btn-blue{
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(64 78 237 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px){
+  .btn-blue{
+    width: 18rem;
+  }
+}
+
 .absolute{
   position: absolute;
 }
@@ -713,6 +794,18 @@ body{
 
 .bottom-0{
   bottom: 0px;
+}
+
+.mt-12{
+  margin-top: 3rem;
+}
+
+.mt-5{
+  margin-top: 1.25rem;
+}
+
+.mt-8{
+  margin-top: 2rem;
 }
 
 .block{
@@ -755,6 +848,10 @@ body{
   width: 1.5rem;
 }
 
+.w-full{
+  width: 100%;
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -767,6 +864,10 @@ body{
   align-items: center;
 }
 
+.justify-center{
+  justify-content: center;
+}
+
 .justify-between{
   justify-content: space-between;
 }
@@ -777,6 +878,10 @@ body{
 
 .gap-5{
   gap: 1.25rem;
+}
+
+.gap-6{
+  gap: 1.5rem;
 }
 
 .gap-x-10{
@@ -803,12 +908,46 @@ body{
   background-color: rgb(64 78 237 / var(--tw-bg-opacity));
 }
 
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#f6f6f6\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(246 246 246 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'images\/hero\/1\.svg\'\)\]{
   background-image: url('images/hero/1.svg');
 }
 
+.bg-\[url\(\)\]{
+  background-image: url();
+}
+
+.bg-\[url\(\'\'\)\]{
+  background-image: url('');
+}
+
+.bg-\[url\(\'images\/\'\)\]{
+  background-image: url('images/');
+}
+
+.bg-\[url\(\'images\/hero\'\)\]{
+  background-image: url('images/hero');
+}
+
+.bg-\[url\(\'images\/star\.svg\'\)\]{
+  background-image: url('images/star.svg');
+}
+
 .bg-center{
   background-position: center;
+}
+
+.bg-no-repeat{
+  background-repeat: no-repeat;
 }
 
 .py-6{
@@ -816,8 +955,33 @@ body{
   padding-bottom: 1.5rem;
 }
 
+.py-20{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .pt-20{
   padding-top: 5rem;
+}
+
+.pb-5{
+  padding-bottom: 1.25rem;
+}
+
+.pt-10{
+  padding-top: 2.5rem;
+}
+
+.pt-24{
+  padding-top: 6rem;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.font-roboto{
+  font-family: Roboto, sans-serif;
 }
 
 .text-3xl{
@@ -828,6 +992,19 @@ body{
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.uppercase{
+  text-transform: uppercase;
 }
 
 .leading-normal{
@@ -847,6 +1024,11 @@ body{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(35 39 42 / var(--tw-text-opacity));
+}
+
 /* Base Style */
 
 /* Components Style */
@@ -863,6 +1045,36 @@ body{
   .md\:hidden{
     display: none;
   }
+
+  .md\:w-6\/12{
+    width: 50%;
+  }
+
+  .md\:w-5\/12{
+    width: 41.666667%;
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
+  .md\:flex-row-reverse{
+    flex-direction: row-reverse;
+  }
+
+  .md\:px-16{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .md\:pt-24{
+    padding-top: 6rem;
+  }
+
+  .md\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
 }
 
 @media (min-width: 1024px){
@@ -872,6 +1084,28 @@ body{
 
   .lg\:hidden{
     display: none;
+  }
+
+  .lg\:w-7\/12{
+    width: 58.333333%;
+  }
+
+  .lg\:w-4\/12{
+    width: 33.333333%;
+  }
+
+  .lg\:gap-8{
+    gap: 2rem;
+  }
+
+  .lg\:py-28{
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+  .lg\:px-32{
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 
   .lg\:text-4xl{
@@ -930,5 +1164,10 @@ body{
   .xl\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .xl\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
   }
 }

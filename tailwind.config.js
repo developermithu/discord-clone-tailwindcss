@@ -5,6 +5,7 @@ module.exports = {
     fontFamily: {
       blackhans: ["Black Han Sans", "sans-serif"],
       opensans: ["Open Sans", "sans-serif"],
+      roboto: ["Roboto", "sans-serif"],
     },
 
     container: {
