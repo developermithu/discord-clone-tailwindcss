@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class=" scroll-smooth">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -69,12 +69,12 @@
     <main>
       <!-- hero section -->
       <section
-        class="relative bg-primary bg-[url('images/hero/1.svg')] bg-center"
+        class="relative bg-primary bg-[url('images/hero/1.svg')] bg-no-repeat bg-center"
       >
         <img
           src="images/hero/2.svg"
           alt=""
-          class="absolute bottom-0 xl:-left-60 w-[65%] xl:w-[40%] block md:hidden xl:block"
+          class="absolute bottom-0 right-0 xl:-left-60 w-[65%] xl:w-[40%] block md:hidden xl:block"
         />
         <img
           src="images/hero/3.svg"
@@ -83,18 +83,18 @@
         />
 
         <div
-          class="flex flex-col gap-8 items-start xl:items-center xl:justify-center container h-[84vh] xl:h-[78vh] pt-20 xl:pt-0"
+          class="flex flex-col gap-8 items-start xl:items-center xl:justify-center container h-[84vh] xl:h-[78vh] pt-16 md:pt-20 xl:pt-0"
         >
           <h1 class="text-3xl lg:text-4xl xl:text-6xl tracking-widest">
             IMAGINE A PLACE...
           </h1>
           <p
-            class="text-sm lg:text-lg xl:text-xl tracking-wider leading-normal"
+            class="text-sm lg:text-lg xl:text-xl tracking-wider leading-normal text-justify"
           >
             ...where you can belong to a school club, a gaming group, or a
-            worldwide art community. <br />
+            worldwide art community. <br class="hidden md:block" />
             Where just you and a handful of friends can spend time together. A
-            place that makes it easy <br />
+            place that makes it easy <br class="hidden md:block" />
             to talk every day and hang out more often.
           </p>
 
@@ -184,7 +184,7 @@
             >
               Reliable tech for staying close
             </h2>
-            <p>
+            <p class="text-justify">
               Low-latency voice and video feels like you’re in the same room.
               Wave hello over video, watch friends stream their games, or gather
               up and have a drawing session with screen share.
@@ -196,10 +196,14 @@
           <div
             class="text-black text-center bg-[url('images/star.svg')] bg-no-repeat bg-center"
           >
-            <h4 class="text-3xl font-bold font-roboto pt-10 md:pt-24">
+            <h4
+              class="text-xl md:text-3xl font-bold font-roboto pt-10 md:pt-24"
+            >
               Ready to start your journey?
             </h4>
-            <button class="btn btn-blue mt-8 flex items-center justify-center gap-x-2 mx-auto">
+            <button
+              class="btn btn-blue mt-8 flex items-center justify-center gap-x-2 mx-auto"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-6 w-6"
@@ -224,16 +228,18 @@
     <!-- Footer Section -->
     <footer class="bg-black py-20">
       <div
-        class="container flex flex-col md:flex-row items-start justify-between gap-20 lg:gap-32"
+        class="container flex flex-col md:flex-row items-start justify-between gap-10 md:gap-20"
       >
         <!-- Left Side -->
         <div>
-          <h3 class="text-primary font-blackhans text-4xl font-extrabold">
-            Imagine A <br />
+          <h4
+            class="text-primary font-blackhans text-4xl lg:text-5xl font-extrabold uppercase"
+          >
+            Imagine A <br class="hidden md:block" />
             Place
-          </h3>
+          </h4>
           <!-- Social Icons -->
-          <div class="flex items-center gap-x-5">
+          <div class="flex items-center gap-x-5 pt-4">
             <ion-icon
               class="w-7 h-7 cursor-pointer hover:opacity-80"
               name="logo-twitter"
@@ -253,6 +259,7 @@
           </div>
           <div></div>
         </div>
+
         <!-- Right Side -->
         <div class="flex-1 grid grid-cols-2 lg:grid-cols-4 gap-10">
           <ul class="flex flex-col gap-y-2">
@@ -329,7 +336,7 @@
 
           <!-- Sign Up Btn -->
           <button
-            class="py-2 px-3 rounded-full bg-primary text-white hover:shadow-lg shadow-primary"
+            class="py-2 px-4 rounded-full bg-primary text-white hover:shadow-lg shadow-primary text-sm hover:opacity-80 transition"
           >
             Sign Up
           </button>

@@ -1,4 +1,4 @@
-### How To Use 
+### How To Download 
 
 ```
 git clone https://github.com/developermithu/discord-clone-tailwindcss.git
