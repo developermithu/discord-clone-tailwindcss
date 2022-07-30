@@ -1209,6 +1209,11 @@ p{
   line-height: 1rem;
 }
 
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -1254,6 +1259,21 @@ p{
 .text-primary{
   --tw-text-opacity: 1;
   color: rgb(64 78 237 / var(--tw-text-opacity));
+}
+
+.text-gray-500{
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.text-gray-400{
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.text-gray-300{
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
 .antialiased{
@@ -1332,6 +1352,11 @@ p{
 .hover\:text-primary:hover{
   --tw-text-opacity: 1;
   color: rgb(64 78 237 / var(--tw-text-opacity));
+}
+
+.hover\:underline:hover{
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 .hover\:opacity-80:hover{
